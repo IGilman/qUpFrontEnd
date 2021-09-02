@@ -1,3 +1,4 @@
-<button class="signup-button" (click)="loginWithRedirect()" *ngIf="(auth.isAuthenticated$ | async) == false">
+<button mat-raised-button color="primary" class="signup-button" (click)="loginWithRedirect()"
+    *ngIf="(auth.isAuthenticated$ | async) == false">
     Sign Up
 </button>

@@ -20,6 +20,8 @@ import { HeaderComponent } from './components/global-components/header/header.co
 import { FooterComponent } from './components/global-components/footer/footer.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+
 
 
 @NgModule({
@@ -47,7 +49,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
       }
     }),
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [
     {
