@@ -1,0 +1,29 @@
+<div>
+    <p>Find gamers for your game!</p>
+
+</div>
+
+<form #addForm="ngForm" (ngSubmit)="findProfiles(addForm)">
+    <label for="game">Game You Play</label>
+    <select name="game" id="game" required ngModel>
+        <option value="">Select Your Game</option>
+        <option value="">All Gamers</option>
+        <option value="Halo">Apex Gamers</option>
+        <option value="CoDWarzone">CoD Gamers</option>
+    </select>
+    <button>Submit</button>
+</form>
+
+<div *ngFor="let profile of gamesList; index as i">
+    <div>
+        <p>{{gamesList[i].username}}</p>
+        <p>{{gamesList[i].game}}</p>
+        <p>{{gamesList[i].kd}}</p>
+        <p>{{gamesList[i].playStyle}}</p>
+        <p>{{gamesList[i].discord}}</p>
+    </div>
+
+    <div>
+        <button>ProfileDetails</button>
+    </div>
+</div>

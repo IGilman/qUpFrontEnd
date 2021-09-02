@@ -1,0 +1,13 @@
+<div>*******PROFILE SECTION*******</div>
+<div *ngIf="auth.user$ | async as user">
+    <h1>{{user.name}}'s Profile</h1>
+    <h2>{{user.email}}</h2>
+</div>
+
+<!-- need to create functionality that when a user signs up
+they are then routed to the "add-profile" component, like how when a known user
+logs in they are routed to the profile page
+
+<app-add-profile></app-add-profile>
+
+ -->

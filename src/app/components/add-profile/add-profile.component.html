@@ -1,0 +1,28 @@
+<form #addForm="ngForm" (ngSubmit)="addProfile(addForm)">
+    <h2>Add Your Profile</h2>
+    <label for="username">GamerTag</label>
+    <input type="text" name="username" id="username" required ngModel />
+    <label for="game">Game You Play</label>
+    <select name="game" id="game" required ngModel>
+        <option value="">Select Your Game</option>
+        <option value="Apex">Apex Legends</option>
+        <option value="CoDWarzone">Call of Duty: Warzone</option>
+    </select>
+    <label for="kd">What's Your K/D Ration?</label>
+    <input type="number" name="kd" id="kd" required ngModel />
+    <label for="playStyle">What's Your Preferred Play Style?</label>
+    <select name="playStyle" id="playStyle" required ngModel>
+        <option value="Aggro">Aggresive/Kills over Wins - Hot Drops, Push Often, More Engagements</option>
+        <option value="Hybrid">Mix between Agressive and Passive</option>
+        <option value="Passive">Passive/Wins over Kills - Loot Up, More Sniping/Distance, Less Engagements</option>
+        <option value="NewToGame">New to the game and unsure</option>
+    </select>
+    <label for="discord">Do You Have/Use Discord?</label>
+    <select name="discord" id="discord" required ngModel>
+        <option value="True">Yes</option>
+        <option value="False">No</option>
+    </select>
+    <button>Add Profile</button>
+</form>
+
+<button (click)="goToGamerList()">Find Gamers</button>
