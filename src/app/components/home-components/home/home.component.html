@@ -6,5 +6,8 @@
 </div>
 <div>
     <h3>Current supported Games on qUp</h3>
-    <!-- maybe add games supported in the DB and pull from there rather than manually add them? -->
+    <div *ngFor="let supportedGame of supportedGames">
+        <p>{{supportedGame?.game}}</p>
+        <img src={{supportedGame?.logoURL}} alt="Game Logo" />
+    </div>
 </div>

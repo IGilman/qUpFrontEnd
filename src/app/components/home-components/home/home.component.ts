@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QupService } from 'src/app/services/qup.service';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  supportedGames: any[];
+
+  constructor(private service: QupService) { }
 
   ngOnInit(): void {
-
+    this.service.getSupportedGames().subscribe(response => {
+      this.supportedGames = response;
+      console.log(response)
+    });
   }
 
 }

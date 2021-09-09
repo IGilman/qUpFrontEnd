@@ -5,3 +5,8 @@ export class Qup {
     playStyle?: string;
     discord?: boolean;
 }
+
+export class Games {
+    game?: String;
+    logoURL?: String;
+}
