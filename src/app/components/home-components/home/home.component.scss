@@ -10,10 +10,16 @@
 
 }
 
+mat-card{
+    height: 200px;
+}
+
 mat-card img{
-    background-image: cover;
-    // object-fit: cover;
-    width: 100%;
+    //background-image: cover;
+    //width:  200px;
+    height: 200px;
+    object-fit: scale-down;
+
 }
 
 @media only screen and (min-width: 768px){
