@@ -11,15 +11,18 @@
 }
 
 mat-card{
-    height: 200px;
+    max-height: 300px;
 }
 
-mat-card img{
-    //background-image: cover;
-    //width:  200px;
-    height: 200px;
-    object-fit: scale-down;
+.game-img-container{
+    display: flex;
+    height: 250px;
+}
 
+.game-img{
+    width: 100%;
+    object-fit: contain;
+    
 }
 
 @media only screen and (min-width: 768px){
@@ -27,6 +30,21 @@ mat-card img{
     .supportedgames-container{
         display: flex;
     }
+
+    .game-img-container{
+        width: 300px;
+    }
+    
+    .game-img{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    
+
+    
+
+
 
 
 }

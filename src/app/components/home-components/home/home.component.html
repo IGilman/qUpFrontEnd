@@ -4,14 +4,18 @@
     <p class="subhead">Find your perfect teammates with qUp!</p>
     <app-signup-button class="button"></app-signup-button>
 </div>
-<div class="supportedgames-container">
+<div>
     <h3>Current supported Games on qUp</h3>
+</div>
+<div class="supportedgames-container">
     <mat-card *ngFor="let supportedGame of supportedGames">
         <mat-card-header>
             <mat-card-title>{{supportedGame?.game}}</mat-card-title>
         </mat-card-header>
+        <div class="game-img-container">
+            <img class="game-img" src={{supportedGame?.logoURL}} alt="Game Logo" />
+        </div>
 
-        <img mat-card-image src={{supportedGame?.logoURL}} alt="Game Logo" />
 
 
     </mat-card>
