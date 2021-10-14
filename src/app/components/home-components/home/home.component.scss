@@ -10,8 +10,14 @@
 
 }
 
+.supportedgames-container{
+
+}
+
 mat-card{
     max-height: 300px;
+    border: 0.1px outset lightgrey;
+    margin-bottom: 20px;
 }
 
 .game-img-container{
@@ -22,13 +28,16 @@ mat-card{
 .game-img{
     width: 100%;
     object-fit: contain;
-    
 }
 
 @media only screen and (min-width: 768px){
 
     .supportedgames-container{
         display: flex;
+    }
+
+    mat-card{
+        margin-right: 20px;
     }
 
     .game-img-container{
